@@ -12,36 +12,36 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: #f0f0f0;
+    background: #222222; /* Carbon Black */
 }
 
 .calculator {
     width: 320px;
-    background: #fff;
+    background: #333333; /* Slightly lighter Carbon Black */
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
     padding: 20px;
 }
 
 .display {
-    background: #f9f9f9;
+    background: #1a1a1a; /* Even darker for contrast */
     border-radius: 15px;
     padding: 20px;
     text-align: right;
     margin-bottom: 20px;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .history {
     font-size: 18px;
-    color: #888;
+    color: #b0b0b0; /* Silver */
     min-height: 25px;
 }
 
 .result {
     font-size: 48px;
     font-weight: 600;
-    color: #333;
+    color: #ffffff; /* White for main result */
     word-wrap: break-word;
 }
 
@@ -58,57 +58,57 @@ body {
     font-size: 22px;
     font-weight: 500;
     cursor: pointer;
-    background: #f5f5f5;
-    color: #333;
+    background: #cccccc; /* Silver dial */
+    color: #333333; /* Dark text on silver dials */
     transition: all 0.2s ease-in-out;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .button:hover {
-    background: #e0e0e0;
+    background: #b0b0b0; /* Darker silver on hover */
     transform: translateY(-2px);
 }
 
 .button:active {
     transform: translateY(1px);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .operator {
-    background: #ff9f43;
-    color: #fff;
+    background: #888888; /* Darker silver for operators */
+    color: #ffffff; /* White text on dark silver operators */
 }
 
 .operator:hover {
-    background: #e68a33;
+    background: #777777;
 }
 
 .ac {
-    background: #ff6b6b;
+    background: #cc0000; /* Red for clear/delete */
     color: #fff;
 }
 
 .ac:hover {
-    background: #e65252;
+    background: #aa0000;
 }
 
 .del {
-    background: #ff6b6b;
+    background: #cc0000; /* Red for clear/delete */
     color: #fff;
 }
 
 .del:hover {
-    background: #e65252;
+    background: #aa0000;
 }
 
 .equals {
     grid-column: span 2;
-    background: #4caf50;
+    background: #008800; /* Green for equals */
     color: #fff;
 }
 
 .equals:hover {
-    background: #43a047;
+    background: #006600;
 }
 
 .zero {
