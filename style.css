@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f0f0f0;
+}
+
+.calculator {
+    width: 320px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.display {
+    background: #f9f9f9;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: right;
+    margin-bottom: 20px;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.history {
+    font-size: 18px;
+    color: #888;
+    min-height: 25px;
+}
+
+.result {
+    font-size: 48px;
+    font-weight: 600;
+    color: #333;
+    word-wrap: break-word;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.button {
+    height: 60px;
+    border: none;
+    border-radius: 15px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+    background: #f5f5f5;
+    color: #333;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.button:hover {
+    background: #e0e0e0;
+    transform: translateY(-2px);
+}
+
+.button:active {
+    transform: translateY(1px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.operator {
+    background: #ff9f43;
+    color: #fff;
+}
+
+.operator:hover {
+    background: #e68a33;
+}
+
+.ac {
+    background: #ff6b6b;
+    color: #fff;
+}
+
+.ac:hover {
+    background: #e65252;
+}
+
+.del {
+    background: #ff6b6b;
+    color: #fff;
+}
+
+.del:hover {
+    background: #e65252;
+}
+
+.equals {
+    grid-column: span 2;
+    background: #4caf50;
+    color: #fff;
+}
+
+.equals:hover {
+    background: #43a047;
+}
+
+.zero {
+    grid-column: span 2;
+}
